@@ -43,31 +43,29 @@ function CountDown() {
                 <div>
                     <div className='countDownDescription'>
                         <div className='newYearContainer'>
-                            {/* <h2><GiTimeTrap /></h2>  */}
                             <h2 className='loader'></h2> 
                             <small id='year'> 2023</small>
                         </div>
-                        {/* <p> The countdown to the new year has begun </p> */}
                     </div>
                     <div className='timer'>
                         <div className='timeHolder'>
                             <p>{daysTimer}</p>
-                            <p>Days</p>
+                            <p className='secondeTimers'>Days</p>
                             <span> : </span>
                         </div>
                         <div className='timeHolder'>
                             <p>{hoursTimer}</p>
-                            <p>Hours</p>
+                            <p className='secondeTimers' >Hours</p>
                             <span> : </span>
                         </div>
                         <div className='timeHolder'>
                             <p>{munitesTimer}</p>
-                            <p>Munites</p>
+                            <p className='secondeTimers'>Munites</p>
                             <span> : </span>
                         </div>
                         <div className='timeHolder'>
                             <p id='seconds'>{secondesTimer}</p>
-                            <p >Secondes</p>
+                            <p className='secondeTimers' >Secondes</p>
                         </div>
                     </div>
                 </div>

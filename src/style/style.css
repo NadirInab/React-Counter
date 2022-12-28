@@ -14,7 +14,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: rgba(8, 28, 124, 0.833); */
     border-radius: 3px;
 }
 .newYearContainer h2{
@@ -32,10 +31,12 @@ body {
         }
       } 
 }
+
+
 .loader {
     width: 50px;
     height: 50px;
-    border: 10px solid #05008a; /* Light grey */
+    border: 10px solid #ff1e0e; /* Light grey */
     border-top: 10px solid #f0e9e9; /* Black */
     border-radius: 50%;
     animation: spinner 1.5s linear infinite;
@@ -51,21 +52,26 @@ body {
 #year {
     font-size: 5em;
     font-weight: bold;
-    color: rgba(255, 255, 255, 0.902);
+    color: rgb(239, 239, 255);
     font-style: italic;
-    
+    /* border-bottom: 4px solid rgb(3, 59, 78); */
 }
 
 .countDownDescription {
-    width: 50%;
+    width: 30%;
     margin: 0 auto;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow: 0 50px 40px 0px rgba( 31, 38, 135, 0.37 );
+    /* background-color: rgb(148, 67, 67); */
 }
 
 .countDownDescription p {
-    font-size: 3em;
+    font-size: 1.4em;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     color: whitesmoke;
+}
+
+.secondeTimers{
+    box-shadow: 1px 1px 3px 0px;
 }
 
 .timerContainer {
@@ -113,8 +119,10 @@ body {
 .timeHolder p:first-of-type {
     color: rgb(7, 45, 119);
     font-size: 6.5em;
+    border-bottom:  3px  solid rgb(9, 69, 125);
+    border-top:  3px  solid  rgb(9, 69, 125);
+    
 }
-
 .timeHolder p:nth-child(2) {
     color: rgb(235, 235, 235);
     font-size: 2em;
