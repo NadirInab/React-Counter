@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@1,300;1,400&display=swap');
+
+body {
+    background-color: cadetblue;
+    background-image: url(../../public/images/youcodehere.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.newYearContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(8, 28, 124, 0.833); */
+    border-radius: 3px;
+}
+.newYearContainer h2{
+    margin-right: 0.3em;
+    color:  white;
+    font-size: 4em;
+}
+.loader {
+    @keyframes spinner {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      } 
+}
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 10px solid #05008a; /* Light grey */
+    border-top: 10px solid #f0e9e9; /* Black */
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+}
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+#year {
+    font-size: 5em;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.902);
+    font-style: italic;
+    
+}
+
+.countDownDescription {
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+.countDownDescription p {
+    font-size: 3em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    color: whitesmoke;
+}
+
+.timerContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countDownDescription {
+    text-align: center;
+}
+
+.timer {
+    text-align: center;
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(208, 253, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-family: 'Petrona', serif;
+    box-shadow: 0px 3px 6px 0px;
+
+}
+.timer:hover{
+    /* box-shadow: 10px 12px 30px 0px rgba(0, 0, 0, 0.2); */
+    box-shadow: 3px 5px 20px 2px;
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition-duration: 1s;
+    scale: 1.001;
+}
+.timeHolder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: baseline;
+    margin-top: 2em;
+    padding: 1.5em;
+}
+
+.timeHolder p:first-of-type {
+    color: rgb(7, 45, 119);
+    font-size: 6.5em;
+}
+
+.timeHolder p:nth-child(2) {
+    color: rgb(235, 235, 235);
+    font-size: 2em;
+}
+
+.timeHolder span {
+    color: rgb(235, 244, 242);
+    font-size: 4em;
+    font-weight: bolder;
+}
+.timeHolder #seconds{
+    color: rgba(245, 56, 56, 0.811);
+}
