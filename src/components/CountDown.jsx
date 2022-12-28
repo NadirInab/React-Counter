@@ -45,6 +45,7 @@ function CountDown() {
                         <div className='newYearContainer'>
                             <h2 className='loader'></h2> 
                             <small id='year'> 2023</small>
+                            
                         </div>
                     </div>
                     <div className='timer'>
