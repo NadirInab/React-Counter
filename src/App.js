@@ -1,13 +1,15 @@
 // import './App.css';
 import CountDown from "./components/CountDown" ;
-// import Firework from "./components/Firework";
+import { useState } from "react";
+import Firework from "./components/Firework";
 
 
 function App() {
+
   return (
     <div className="App">
-      {/* <Firework /> */}
-      <CountDown  />
+      <CountDown   />
+      <Firework />
     </div>
   );
 }

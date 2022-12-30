@@ -1,21 +1,24 @@
 import React, { useState, useRef, useEffect} from 'react';
-// import {GiTimeTrap} from "react-icons/gi" ;
-import { FaSpinner } from "react-icons/fa" ;
 import "../style/style.css";
+import sounds from "../assets/trimedMp3.mp3" ;
 
 function CountDown() {
+        const [flag , setFlag ] = useState(true) ;
         const [daysTimer, setDaysTimer] = useState("00") ;
         const [hoursTimer, sethoursTimer] = useState("00") ;
         const [munitesTimer, setMunitesTimer] = useState("00") ;
         const [secondesTimer, setSecondesTimer] = useState("00") ;
 
         let timeInterval = useRef()  ;
+        
+        let play = () =>{
+            new Audio(sounds).play() ;
+        }
 
         const triggerTimer = ()=>{
-            const countDownDate = new Date("January 1, 2023 00:00:00").getTime() ;
+            const countDownDate = new Date("December 30, 2022 14:50:00").getTime() ;
 
             timeInterval = setInterval(()=>{
-                
                 const now = new Date().getTime() ;
                 const disparity = countDownDate - now ;
                 const days = Math.floor(disparity / (1000 * 60 * 60 * 24)) ;
@@ -24,7 +27,8 @@ function CountDown() {
                 const seconds = Math.floor((disparity % (1000 * 60)) / 1000) ;
                 if(disparity < 0){
                     clearInterval(timeInterval.current) ;
-
+                    setFlag(false) ;
+                    play() ;
                 }else{
                     setDaysTimer(days) ;
                     sethoursTimer(hours) ;
@@ -36,11 +40,12 @@ function CountDown() {
 
         useEffect(()=>{
             triggerTimer() ;
+            // play() ;
         })
 
     return (
         <>
-            <section className='timerContainer'>
+        {flag && ( <section className='timerContainer'>
                 <div>
                     <div className='countDownDescription'>
                         <div className='newYearContainer'>
@@ -71,7 +76,8 @@ function CountDown() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>)}
+           
         </>
     )
 }
