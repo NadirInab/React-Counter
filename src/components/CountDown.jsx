@@ -44,6 +44,11 @@ function CountDown() {
             triggerTimer() ;
         })
 
+        let daysPlural = (daysTimer < 2) ? null : "s" ;
+        let hoursPlural = (hoursTimer < 2) ? null : "s" ;
+        let munitesPluarl = (munitesTimer < 2) ? null : "s" ;
+        let plural = (secondesTimer <2) ? null : "s" ;
+
     return (
         <>
         {flag && ( <section className='timerContainer'>
@@ -58,22 +63,22 @@ function CountDown() {
                     <div className='timer'>
                         <div className='timeHolder'>
                             <p>{daysTimer}</p>
-                            <p className='secondeTimers'>Days </p>
+                            <p className='secondeTimers'>Day{daysPlural}</p>
                             <span> : </span>
                         </div>
                         <div className='timeHolder'>
                             <p>{hoursTimer}</p>
-                            <p className='secondeTimers' >Hours </p>
+                            <p className='secondeTimers' >Hour{hoursPlural} </p>
                             <span> : </span>
                         </div>
                         <div className='timeHolder'>
                             <p>{munitesTimer}</p>
-                            <p className='secondeTimers'>Munites </p>
+                            <p className='secondeTimers'>Munite{munitesPluarl} </p>
                             <span> : </span>
                         </div>
                         <div className='timeHolder'>
                             <p id='seconds'>{secondesTimer}</p>
-                            <p className='secondeTimers' >Secondes </p>
+                            <p className='secondeTimers'>Seconde{plural} </p>
                         </div>
                     </div>
                 </div>
