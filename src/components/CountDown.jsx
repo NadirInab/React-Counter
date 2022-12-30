@@ -17,7 +17,7 @@ function CountDown() {
 
         const triggerTimer = ()=>{
             // const countDownDate = new Date("December 30, 2022 20:30:00").getTime() ;
-            const countDownDate = new Date("December 30, 2022 20:30:00").getTime() ;
+            const countDownDate = new Date("December 30, 2022 18:19:00").getTime() ;
 
             timeInterval = setInterval(()=>{
                 const now = new Date().getTime() ;
