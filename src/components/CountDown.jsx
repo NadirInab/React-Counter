@@ -23,7 +23,8 @@ function CountDown() {
                 const Munites = Math.floor((disparity % (1000 * 60 * 60 )) / (1000*60)) ;
                 const seconds = Math.floor((disparity % (1000 * 60)) / 1000) ;
                 if(disparity < 0){
-                    clearInterval(timeInterval.current)
+                    clearInterval(timeInterval.current) ;
+                    
                 }else{
                     setDaysTimer(days) ;
                     sethoursTimer(hours) ;
