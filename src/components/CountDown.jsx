@@ -48,6 +48,7 @@ function CountDown() {
         let hoursPlural = (hoursTimer < 2) ? null : "s" ;
         let munitesPluarl = (munitesTimer < 2) ? null : "s" ;
         let plural = (secondesTimer <2) ? null : "s" ;
+        
 
     return (
         <>
