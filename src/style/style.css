@@ -2,12 +2,14 @@
 
 body {
     background-color: cadetblue;
-    background-image: url(../../public/images/youcodehere.jpg);
-    -webkit-background-size: cover;
+    background-image: url(../../public/images/thebackgroundyoucode.jpg);
+    /* -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -o-background-size: cover; */
+    /* background-size: cover; */
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .newYearContainer{
