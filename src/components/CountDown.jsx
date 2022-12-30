@@ -52,22 +52,22 @@ function CountDown() {
                     <div className='timer'>
                         <div className='timeHolder'>
                             <p>{daysTimer}</p>
-                            <p className='secondeTimers'>Days</p>
+                            <p className='secondeTimers'>Days </p>
                             <span> : </span>
                         </div>
                         <div className='timeHolder'>
                             <p>{hoursTimer}</p>
-                            <p className='secondeTimers' >Hours</p>
+                            <p className='secondeTimers' >Hours </p>
                             <span> : </span>
                         </div>
                         <div className='timeHolder'>
                             <p>{munitesTimer}</p>
-                            <p className='secondeTimers'>Munites</p>
+                            <p className='secondeTimers'>Munites </p>
                             <span> : </span>
                         </div>
                         <div className='timeHolder'>
                             <p id='seconds'>{secondesTimer}</p>
-                            <p className='secondeTimers' >Secondes</p>
+                            <p className='secondeTimers' >Secondes </p>
                         </div>
                     </div>
                 </div>
