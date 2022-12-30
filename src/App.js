@@ -1,6 +1,5 @@
 // import './App.css';
 import CountDown from "./components/CountDown" ;
-import { useState } from "react";
 import Firework from "./components/Firework";
 
 

@@ -1,5 +1,5 @@
 import React from 'react' ;
-import Fireworks from "../assets/fireworks.mp4" ;
+import Fireworks from "../assets/newtrimedvideo.mp4" ;
 import "../style/style.css";
 
 

@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect} from 'react';
 import "../style/style.css";
-import sounds from "../assets/trimedMp3.mp3" ;
+import sounds from "../assets/newtrimed.mp3" ;
 
 function CountDown() {
         const [flag , setFlag ] = useState(true) ;
@@ -16,7 +16,8 @@ function CountDown() {
         }
 
         const triggerTimer = ()=>{
-            const countDownDate = new Date("December 30, 2022 14:50:00").getTime() ;
+            // const countDownDate = new Date("December 30, 2022 20:30:00").getTime() ;
+            const countDownDate = new Date("December 30, 2022 15:35:00").getTime() ;
 
             timeInterval = setInterval(()=>{
                 const now = new Date().getTime() ;
@@ -27,8 +28,9 @@ function CountDown() {
                 const seconds = Math.floor((disparity % (1000 * 60)) / 1000) ;
                 if(disparity < 0){
                     clearInterval(timeInterval.current) ;
-                    setFlag(false) ;
                     play() ;
+                    setFlag(false) ;
+                    
                 }else{
                     setDaysTimer(days) ;
                     sethoursTimer(hours) ;
@@ -40,7 +42,6 @@ function CountDown() {
 
         useEffect(()=>{
             triggerTimer() ;
-            // play() ;
         })
 
     return (
