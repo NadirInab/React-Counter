@@ -6,7 +6,7 @@ import Firework from "./components/Firework";
 function App() {
   return (
     <div className="App">
-      <Firework />
+      {/* <Firework /> */}
       <CountDown  />
     </div>
   );
